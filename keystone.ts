@@ -4,7 +4,7 @@ import {text, integer} from '@keystone-6/core/fields';
 export default config({
     server: {
         cors: {
-            origin: '*',
+            origin: false,
             methods: 'GET,HEAD,PUT,PATCH,POST,DELETE,OPTIONS',
             preflightContinue: true
         }
