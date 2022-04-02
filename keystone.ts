@@ -2,6 +2,9 @@ import {config, list} from '@keystone-6/core';
 import {text, integer} from '@keystone-6/core/fields';
 
 export default config({
+    server: {
+        cors: {origin: ['*']}
+    },
     db: {
         provider: 'sqlite',
         url: 'file:./keystone.db',
