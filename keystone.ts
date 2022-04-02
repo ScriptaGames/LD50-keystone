@@ -3,7 +3,11 @@ import {text, integer} from '@keystone-6/core/fields';
 
 export default config({
     server: {
-        cors: {origin: ['*']}
+        cors: {
+            origin: '*',
+            methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+            preflightContinue: true
+        }
     },
     db: {
         provider: 'sqlite',
