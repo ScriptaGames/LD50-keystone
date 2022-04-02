@@ -17,3 +17,10 @@ model Player {
   seed          String @unique @default("")
   rooms_cleared Int    @default(0)
 }
+
+model User {
+  id       String @id @default(cuid())
+  name     String @default("")
+  email    String @unique @default("")
+  password String
+}
