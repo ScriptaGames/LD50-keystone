@@ -105,4 +105,4 @@ dist
 
 .idea
 .keystone
-.keystone.db
+keystone.db
