@@ -7,6 +7,12 @@
   "author": "Jared Sprague",
   "license": "MIT",
   "private": false,
+  "scripts": {
+    "deploy": "keystone build && keystone prisma migrate deploy",
+    "dev": "keystone dev",
+    "postinstall": "keystone postinstall",
+    "start": "keystone start"
+  },
   "dependencies": {
     "@keystone-6/auth": "^2.0.0",
     "@keystone-6/core": "^1.1.0",
