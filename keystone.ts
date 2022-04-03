@@ -13,6 +13,7 @@ export default withAuth(
         db: {
             provider: 'sqlite',
             url: 'file:./keystone.db',
+            useMigrations: true
         },
         ui: {
             // We check that someone has session data before letting them see the Admin UI.
