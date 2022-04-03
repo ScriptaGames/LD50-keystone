@@ -13,7 +13,7 @@ generator client {
 
 model Player {
   id            String @id @default(cuid())
-  name          String @unique @default("")
+  name          String @default("")
   seed          String @unique @default("")
   rooms_cleared Int    @default(0)
 }

@@ -10,7 +10,6 @@ type Player {
 
 input PlayerWhereUniqueInput {
   id: ID
-  name: String
   seed: String
 }
 
