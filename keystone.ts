@@ -22,7 +22,7 @@ export default withAuth(
         lists: {
             Player: list({
                 fields: {
-                    name: text({validation: {isRequired: true}}),
+                    name: text({validation: {isRequired: true}, isFilterable: true}),
                     seed: text({validation: {isRequired: true}, isIndexed: 'unique'}),
                     rooms_cleared: integer({
                         defaultValue: 0,
